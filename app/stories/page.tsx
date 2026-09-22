@@ -1,12 +1,4 @@
-const stories=[
-  {title:"Historical visits",place:"Bethlehem",image:"/assets/histo.jpg"},
-  {title:"Tech conferences",place:"CyberX Africa Ghana 2022 · WorldWaysOne delegates",image:"/assets/tech.jpg"},
-  {title:"Academic trips & tours",place:"Daystar University · Malaysia",image:"/assets/del2.jpg"},
-  {title:"Cultural exchange",place:"Daystar University · Singapore",image:"/assets/del3.jpg"},
-  {title:"Professional training",place:"Bomet County Assembly team · Jewel Changi Airport",image:"/assets/Bomet.jpg"},
-  {title:"Project delegations",place:"Ghana",image:"/assets/conf1.jpg"},
-  {title:"International workshops",place:"Tel Aviv",image:"/assets/isra.jpg"},
-  {title:"Seminars & training",place:"Learning across borders",image:"/assets/conf2.jpg"},
-];
-export const metadata={title:"Activities & stories"};
-export default function Stories(){return <main><section className="page-heading"><p className="kicker">ACTIVITIES & STORIES</p><h1>Experience measured<br/><em>in real moments.</em></h1><p>A selection of the people, places and programs that have shaped WorldWaysOne’s work across travel, training, exchange and international collaboration.</p></section><section className="stories-grid section-pad">{stories.map((story,i)=><article key={story.title}><div><img src={story.image} alt=""/><span>0{i+1}</span></div><p>{story.title}</p><h2>{story.place}</h2></article>)}</section></main>}
+const images=["Banner-Kenya.webp","Bomet.jpg","Europe2.webp","Europe4.webp","Fatima banner.webp","Lewa-wildlife-Conservancy.jpg","Lorrain.webp","Nairobi-Giraffe.webp","Safari_Camp-1.jpg","about-1i.jpg","afya3.jpg","ambos.webp","avif.png","beach.jpg","bg_4.jpg","bomas-of-kenya.gif","camp-de.webp","con1.jpg","conf.jpg","conf1.jpg","conf2.jpg","cruise-pool.webp","del2.jpg","del3.jpg","ewaso-river-samburu.jpg","family-trip.jpg","family.jpg","fatima.jpg","fatima1.jpg","gallery--1.jpg","gallery--4.jpg","gallery-2.jpg","group.webp","histo.jpg","isra.jpg","italy greese.jpeg","kenya-family.jpg","law.png","legal.jpeg","lion-nairobi.jpg","menu-3i.jpg","menu12.jpg","menu2.jpg","menu4.jpg","mombasa-diani.jpg","mombasa-fort.jpg","mombasa-oldb.jpg","mount titlis.jpg","nairobi-banner.jpg","office-g.jpeg","park-main-gate.jpeg","safari.jpg","safari1.jpg","samburu-safari.png","sistine.jpg","slide-1.jpg","slide-2.jpg","slide-3.jpg","swahili.jpg","swimming-pool-private-safari.jpg","tech.jpg","travel.jpg","vatican.jpg","visit.jpg","youth1.jpg"];
+const label=(name:string)=>name.replace(/\.(jpg|jpeg|png|webp|gif)$/i,"").replace(/[-_]+/g," ").replace(/\b\w/g,c=>c.toUpperCase());
+export const metadata={title:"Activities & gallery"};
+export default function Stories(){return <main><section className="page-heading"><p className="kicker">ACTIVITIES & GALLERY</p><h1>Real programs.<br/><em>Real places and people.</em></h1><p>The complete WorldWaysOne image collection from youth training, delegations, conferences, educational travel, faith journeys, local excursions and professional work.</p></section><section className="gallery-grid section-pad">{images.map((image,i)=><figure key={image}><div><img loading={i>5?"lazy":"eager"} src={`/assets/${image}`} alt={label(image)}/></div><figcaption><span>{String(i+1).padStart(2,"0")}</span>{label(image)}</figcaption></figure>)}</section></main>}

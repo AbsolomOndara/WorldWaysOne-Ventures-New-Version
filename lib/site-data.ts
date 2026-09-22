@@ -21,10 +21,14 @@ export const services: Service[] = [
 ];
 
 export const itineraries = [
-  { title:"Global Academic Exchange", duration:"14 days", region:"Asia", image:"/assets/del3.jpg", days:["Depart Nairobi and welcome orientation","University lectures and campus visits","Innovation hubs and industry immersion","Cultural exchange and city discovery","Group projects, presentations and return"] },
-  { title:"Kenya Safari & Coast", duration:"10 days", region:"Kenya", image:"/assets/ambos.webp", days:["Nairobi arrival and local orientation","Amboseli game drives beneath Kilimanjaro","Maasai Mara wildlife and conservancy experiences","Fly to the coast for Swahili culture","Diani beach stay and departure"] },
-  { title:"Sacred Europe", duration:"12 days", region:"Europe", image:"/assets/vatican.jpg", days:["Rome and Vatican City","Assisi and the Basilica of St Francis","Florence, Pisa and sacred art","Fatima pilgrimage experience","Reflection, community and return"] },
-  { title:"Nairobi in a Day", duration:"1 day", region:"Nairobi", image:"/assets/Nairobi-Giraffe.webp", days:["Early Nairobi National Park game drive","Giraffe Centre conservation visit","Kenyan lunch and craft market","Bomas of Kenya cultural experience","Hotel transfer"] },
+  { title:"Academic & Educational Tours", duration:"Program based", region:"Worldwide", image:"/assets/del3.jpg", href:"https://worldwaysone.co.ke/academic-tours.php", summary:"University, research-centre, museum, industry and cultural visits for schools, institutions and professional groups." },
+  { title:"Private & Family Tours", duration:"Tailor-made", region:"Africa & worldwide", image:"/assets/kenya-family.jpg", href:"https://worldwaysone.co.ke/family-tours.php", summary:"Private journeys combining wildlife, culture, beach stays and experiences paced for your family or group." },
+  { title:"Kenya Safari Tours", duration:"Tailor-made", region:"Kenya", image:"/assets/ambos.webp", href:"https://worldwaysone.co.ke/safari-tours.php", summary:"Wildlife journeys through parks and conservancies, with road or fly-in options and considered accommodation." },
+  { title:"Nairobi Excursions", duration:"Half or full day", region:"Nairobi", image:"/assets/Nairobi-Giraffe.webp", href:"https://worldwaysone.co.ke/nairobi-tours.php", summary:"City, culture and conservation experiences including the national park, museums, markets and heritage sites." },
+  { title:"Mombasa Excursions", duration:"Flexible", region:"Kenyan coast", image:"/assets/mombasa-diani.jpg", href:"https://worldwaysone.co.ke/mombasa-tours.php", summary:"Old Town, Fort Jesus, Swahili culture, marine excursions and Indian Ocean beach experiences." },
+  { title:"Europe Pilgrimage", duration:"Program based", region:"Europe", image:"/assets/Fatima banner.webp", href:"https://worldwaysone.co.ke/europe-tours.php", summary:"Faith-centred travel across Rome, Vatican City, Assisi, Fatima and other sacred and cultural destinations." },
+  { title:"Holy Land Pilgrimage", duration:"Program based", region:"Holy Land", image:"/assets/jerusalem.jpg", href:"https://worldwaysone.co.ke/holiday-pilgrimage.php", summary:"Guided visits to places of faith and history, arranged for churches, ministries, families and groups." },
+  { title:"Cruise Tours", duration:"Sailing based", region:"International", image:"/assets/cruise-pool.webp", href:"https://worldwaysone.co.ke/cruise-tours.php", summary:"Cruise selection, flights, transfers, pre- and post-stays, documentation and curated shore excursions." },
 ];
 
 export const navTravel = services.slice(0, 8);
